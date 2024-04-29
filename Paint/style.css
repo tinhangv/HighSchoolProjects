@@ -1,0 +1,21 @@
+body{
+  text-align: center;
+}
+
+canvas{
+  border: 2px solid black;
+}
+.colours{
+  border:1px solid grey;
+  padding-right : 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#eraser{
+  width:30px;
+  margin-bottom: -3px;
+  margin-left: 5px;
+}
+input{
+  width:50px;
+}

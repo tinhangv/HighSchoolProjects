@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Operations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='Main'>
+        <h1 id='title'>Simple Operations!</h1>
+        <div id='home'>
+            <div id='bar'>
+                <a class='tab' onclick = "select('+', this.innerHTML)">Addition</a>
+                <a class='tab' onclick = "select('-', this.innerHTML)">Subtraction</a>
+                <a class='tab' onclick = "select('*', this.innerHTML)">Multiplication</a>
+                <a class='tab' onclick = "select('/', this.innerHTML)">Division</a>
+                <a class='tab' onclick = "select('custom', this.innerHTML)">Custom</a>
+            </div>
+            <p id='welcome'>Welcome to Simple Operations! Please select an operation to begin.</p>
+            <h3 id='settingsH3' ></h3>
+            
+            <ul id='qsettings1' style="display:none">
+                <li>10 Questions <input type="checkbox" id='check10' onchange = 'toggleChecked(10, this.checked)'></li>
+                <li>25 Questions <input type="checkbox" id='check25' onchange = 'toggleChecked(25, this.checked)'></li>
+                <li>50 Questions <input type="checkbox" id='check50' onchange = 'toggleChecked(50, this.checked)'></li>
+            </ul>
+            <div id='qsettings2' style="display:none">
+                <h4>Operations</h4>
+                <ul>
+                    <li>Addition <input type="checkbox" onchange = 'checkOp("add", this.checked)'></li>
+                    <li>Subtraction <input type="checkbox" onchange ='checkOp("sub", this.checked)'></li>
+                    <li>Multiplication <input type="checkbox" onchange = 'checkOp("mul", this.checked)'></li>
+                    <li>Division <input type="checkbox" onchange = 'checkOp("div", this.checked)'></li>
+                </ul>
+                <p>Questions: 
+                    <input type="number" id='customQ'>
+                </p>
+                <p>Largest Variable: 
+                    <input type="number" id='customUpto'>
+                    <br>
+                    <em>*Not Required. Ex, operation selected = multiplication, largest variable = 12, questions will be from 0 times table up to 12 times table.</em>
+                </p>
+    
+                <p id='error' style="display:none"> 
+                    <em>Please select at least one operation and enter the number of questions to be generated.</em>
+                </p>
+            </div>
+            <div id='startDiv' style="display:none">
+                <button id='start'>start quiz</button>
+                <br>
+                <em>Good Luck!</em>
+            </div>
+        </div>
+        
+        <div id='question' style="display:none">
+            <button id='goHome1'>Home</button>
+            <button id='endQuiz'>End Quiz</button>
+            <p>Question <span id='qNum'></span> of <span id='qAm'></span></p>
+            <span id='a'> </span>
+            <span id='op'></span>
+            <span id='b'> </span>
+            <span>=</span>
+            <input type="number" id='inp' onchange = 'next()'>
+            <br>
+            <button id='prev' style="display:none">previous</button>
+            <button id='next'>next</button>
+            <p>Go to question: <input type="number" id = 'goto'> <button id='gotoBtn'>Go</button></p>
+        </div>
+
+        <div id='result' style="display:none">
+            <button id='goHome2'>Home</button>
+            <br>
+            Your score is 
+            <span id='correctAns'></span>
+            /
+            <span id='totalAns'></span>.
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
