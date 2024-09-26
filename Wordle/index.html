@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Wordle</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <script src="https://kit.fontawesome.com/e2a8b98995.js"></script>
+  <body>
+    <div class="header">
+        <h1>
+          <i class="left far fa-question-circle" id='question'></i>
+          <span id='title'>WORDLE</span>
+          <i class="right fas fa-cog" id='cog'></i>
+          <i class="right far fa-chart-bar" id='chart'></i></i>
+        </h1>
+      <hr>
+    </div>
+
+    <div class="entries">
+      <div class="row0">
+        <input id="00" type="text" maxlength='1' readonly>
+        <input id="01" type="text" maxlength='1' readonly>
+        <input id="02" type="text" maxlength='1' readonly>
+        <input id="03" type="text" maxlength='1' readonly>
+        <input id="04" type="text" maxlength='1' readonly>
+      </div>
+      <div class="row1">
+        <input id="10" type="text" maxlength='1' readonly>
+        <input id="11" type="text" maxlength='1' readonly>
+        <input id="12" type="text" maxlength='1' readonly>
+        <input id="13" type="text" maxlength='1' readonly>
+        <input id="14" type="text" maxlength='1' readonly>
+      </div>
+      <div class="row2">
+        <input id="20" type="text" maxlength='1' readonly>
+        <input id="21" type="text" maxlength='1' readonly>
+        <input id="22" type="text" maxlength='1' readonly>
+        <input id="23" type="text" maxlength='1' readonly>
+        <input id="24" type="text" maxlength='1' readonly>
+      </div>
+      <div class="row3">
+        <input id="30" type="text" maxlength='1' readonly>
+        <input id="31" type="text" maxlength='1' readonly>
+        <input id="32" type="text" maxlength='1' readonly>
+        <input id="33" type="text" maxlength='1' readonly>
+        <input id="34" type="text" maxlength='1' readonly>
+      </div>
+      <div class="row4">
+        <input id="40" type="text" maxlength='1' readonly>
+        <input id="41" type="text" maxlength='1' readonly>
+        <input id="42" type="text" maxlength='1' readonly>
+        <input id="43" type="text" maxlength='1' readonly>
+        <input id="44" type="text" maxlength='1' readonly>
+      </div>
+      <div class="row5">
+        <input id="50" type="text" maxlength='1' readonly>
+        <input id="51" type="text" maxlength='1' readonly>
+        <input id="52" type="text" maxlength='1' readonly>
+        <input id="53" type="text" maxlength='1' readonly>
+        <input id="54" type="text" maxlength='1' readonly>
+      </div>
+    </div>
+
+    <div class="keyboard">
+      <div class='toprow'>
+        <button id="Q">Q</button>
+        <button id="W">W</button>
+        <button id="E">E</button>
+        <button id="R">R</button>
+        <button id="T">T</button>
+        <button id="Y">Y</button>
+        <button id="U">U</button>
+        <button id="I">I</button>
+        <button id="O">O</button>
+        <button id="P">P</button>
+      </div>
+      <div class='middlerow'>
+        <button id="A">A</button>
+        <button id="S">S</button>
+        <button id="D">D</button>
+        <button id="F">F</button>
+        <button id="G">G</button>
+        <button id="H">H</button>
+        <button id="J">J</button>
+        <button id="K">K</button>
+        <button id="L">L</button>
+      </div>
+      <div class='bottomrow'>
+        <button id='enter'>ENTER</button>
+        <button id="Z">Z</button>
+        <button id="X">X</button>
+        <button id="C">C</button>
+        <button id="V">V</button>
+        <button id="B">B</button>
+        <button id="N">N</button>
+        <button id="M">M</button>
+        <button id='del'><i class='fas fa-backspace'></i></button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
